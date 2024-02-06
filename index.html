@@ -1,0 +1,2410 @@
+<!DOCTYPE html>
+<html data-lt-installed="true">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link type="text/css" rel="stylesheet" href="./2mlsm1us.plp7.ru_files/vendors.css">
+  
+  <link type="text/css" rel="stylesheet" href="./2mlsm1us.plp7.ru_files/default.css">
+  
+  <link type="text/css" rel="stylesheet" href="./2mlsm1us.plp7.ru_files/nodes.css">
+  
+  <link type="text/css" rel="stylesheet" href="./2mlsm1us.plp7.ru_files/vendors-sync.css">
+
+<style>.node.css0 > .wrapper1 { background-color: rgb(12, 80, 198); border-radius: 100px; border-width: 1px; border-style: solid; border-color: rgb(122, 158, 184) }
+.node.css0  { color: #FFF; padding-top: 6px; padding-bottom: 1px; padding-left: 6px; padding-right: 30px }
+.node.css0 a { color: rgb(25, 100, 230) }
+
+.textable.css1  { text-align: center; font-family: "Times New Roman"; font-size: 32px; line-height: 1.5999999999999999; letter-spacing: 0.1142857142857143em; color: rgb(22, 102, 241); opacity: 1 }
+.screen-xs .textable.css1  { text-align: center!important }
+
+.node.css2  { color: #333; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px }
+.node.css2 a { color: rgb(25, 100, 230) }
+
+.textable.css3  { text-align: center; font-family: "Open Sans"; font-size: 16px; line-height: 1.4; letter-spacing: 0em; opacity: 1 }
+.screen-xs .textable.css3  { text-align: center!important }
+
+.node.css4 > .wrapper1 { background-color: white }
+.node.css4  { color: #333 }
+.node.css4  > .padding_top { padding-top: 0px }
+.node.css4  > .padding_bottom { padding-bottom: 6px }
+.node.css4 a { color: rgb(25, 100, 230) }
+
+.btn.css5 { background-color: rgba(255, 255, 255, 0);border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;border-style: solid;border-top-width: 0px;border-bottom-width: 0px;border-left-width: 0px;border-right-width: 0px;border-color: rgb(204, 204, 204);padding-top: 8px;padding-bottom: 8px;font-size: 17px;color: rgb(255, 255, 255)!important; } .btn.css5:hover, .btn.css5.hover { background-color: rgba(230, 230, 230, 0);border-color: rgb(163, 163, 163);color: rgb(204, 204, 204)!important; } .btn.css5:active, .btn.css5.active { background-color: rgba(207, 207, 207, 0);border-color: rgb(184, 184, 184);color: rgb(255, 255, 255)!important; } .btn.css5:before {  } .btn.css5:active:before, .btn.css5.active:before { background-color: rgba(207, 207, 207, 0); }
+.node.css6  { color: #FFF; padding-top: 10px; padding-bottom: 10px; padding-left: 5px; padding-right: 5px }
+.node.css6 a { color: rgb(25, 100, 230) }
+
+.node.css7 > .wrapper1 { background-color: rgb(12, 80, 198) }
+.node.css7  { color: #FFF }
+.node.css7  > .padding_top { padding-top: 0px }
+.node.css7  > .padding_bottom { padding-bottom: 0px }
+.node.css7 a { color: rgb(25, 100, 230) }
+
+.node.css8  { color: #333; padding-top: 10px; padding-bottom: 17px; padding-left: 5px; padding-right: 5px }
+.node.css8 a { color: rgb(25, 100, 230) }
+
+.textable.css9  { text-align: right; font-family: "TTNorms Medium"; font-size: 40px; line-height: 1.2; letter-spacing: 0em; opacity: 1 }
+.screen-xs .textable.css9  { font-size: 30px!important }
+
+.node.css10  { color: #333; padding-top: 10px; padding-bottom: 10px; padding-left: 5px; padding-right: 5px }
+.node.css10 a { color: rgb(230, 25, 25) }
+
+.textable.css11  { text-align: right; font-family: "Open Sans"; font-size: 22px; line-height: 1.6; letter-spacing: 0em; opacity: 1 }
+.screen-xs .textable.css11  { font-size: 21px!important }
+
+.node.css12 .bgimage { height: 200px }
+.node.css12 img.selectable { max-height: 200px }
+.node.css12 .proportions { width: 266.66666666666663px; padding-top: 200px }
+
+.textable.css13  { text-align: center; font-family: "Open Sans"; font-size: 16px; line-height: 1.6; letter-spacing: 0em; opacity: 1 }
+
+.node.css14 > .wrapper1 { background-color: rgba(200, 200, 200, 0.25) }
+.node.css14  { color: #333; padding-top: 10px; padding-bottom: 10px; padding-left: 5px; padding-right: 5px }
+.node.css14 a { color: rgb(230, 25, 25) }
+
+.node.css15  { color: #333; padding-top: 10px; padding-bottom: 10px; padding-left: 5px; padding-right: 5px }
+.node.css15 a { color: rgb(25, 100, 230) }
+
+.textable.css16  { text-align: right; font-family: "Open Sans"; font-size: 18px; line-height: 1.6; letter-spacing: 0em; opacity: 1 }
+
+.textable.css17  { text-align: right; font-family: "Open Sans"; font-size: 16px; line-height: 1.6; letter-spacing: 0em; opacity: 1 }
+
+.textable.css18  { text-align: right; font-family: "TTNorms Medium"; font-size: 28px; line-height: 1.2; letter-spacing: 0em; opacity: 1 }
+
+
+.textable.css20  { text-align: center; font-family: "TTNorms Medium"; font-size: 36px; line-height: 1.2; letter-spacing: 0em; opacity: 1 }
+.screen-xs .textable.css20  { font-size: 38px!important }
+
+.btn.css21 { background-color: rgb(25, 241, 22);border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;border-style: solid;border-top-width: 0px;border-bottom-width: 0px;border-left-width: 0px;border-right-width: 0px;border-color: rgb(14, 198, 12);padding-top: 14px;padding-bottom: 14px;font-size: 14px;font-weight: bold;color: rgb(255, 255, 255)!important; } .btn.css21:hover, .btn.css21.hover { background-color: rgb(16, 223, 13);border-color: rgb(11, 159, 10);color: rgb(255, 255, 255)!important; } .btn.css21:active, .btn.css21.active { background-color: rgb(14, 201, 12);border-color: rgb(13, 179, 11);color: rgb(255, 255, 255)!important; } .btn.css21:before {  } .btn.css21:active:before, .btn.css21.active:before { background-color: rgb(14, 201, 12); }
+.node.css22  { color: #333; padding-top: 13px; padding-bottom: 13px; padding-left: 8px; padding-right: 8px }
+.node.css22 > .wrapper1 { border-width: 3px; border-style: dashed; border-color: rgb(22, 241, 209) }
+.node.css22 a { color: rgb(25, 100, 230) }
+
+.textable.css23  { text-align: right; font-family: "Open Sans"; font-size: 28px; line-height: 1.2; letter-spacing: 0em; opacity: 1 }
+
+.node.css24  { color: #333; padding-top: 81px; padding-bottom: 10px; padding-left: 5px; padding-right: 5px }
+.node.css24 a { color: rgb(25, 100, 230) }
+
+.metahtml.css25 .form1-cover {
+  padding: 20px 15px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(22, 102, 241);
+  border-style: none;
+  border-width: 2px;
+  border-radius: 5px;
+  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.node.css26  { color: #333; padding-top: 20px; padding-bottom: 20px; padding-left: 5px; padding-right: 5px }
+.node.css26 a { color: rgb(25, 100, 230) }
+
+.textable.css27  { text-align: center; font-family: "TTNorms Medium"; font-size: 28px; line-height: 1.2; letter-spacing: 0.04em; opacity: 1 }
+
+.metahtml.css28 [cr-field] {
+  padding-bottom: 14px;
+  font-size: 14px;
+  font-family: Open Sans;
+}
+
+.metahtml.css28 .name {
+  font-weight: normal;
+  font-family: Open Sans;
+  opacity: 0.8;
+  margin-bottom: 6.5px;
+  font-size: 13px;
+  word-wrap: break-word;
+  text-transform: uppercase;;
+  letter-spacing: 0.1em;;
+}
+
+.metahtml.css28 .form-control {
+  height: auto;
+  line-height: 1.2;
+  box-shadow: none;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  padding: 12px 9.6px;
+  font-size: 14px;
+  cursor: initial;
+}
+
+.metahtml.css28 .form-control:focus,
+.metahtml.css28 .form-control:focus-within {
+  border-color: rgb(22, 102, 241);
+  background-color: rgb(252, 252, 252);
+}
+
+.metahtml.css28 .form-control + .form-control {
+  margin-top: 10px;
+}
+
+.metahtml.css28 label {
+  font-weight: normal;
+  display: block;
+  cursor: pointer;
+}
+
+.metahtml.css28 textarea {
+  resize: vertical;
+}
+
+.metahtml.css28 .checkbox {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  margin: 0 5.5px 0 0;
+  line-height: 0;
+  min-height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  background: white;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: 300ms all;
+  border-radius: 2px;
+}
+
+.metahtml.css28 .checkbox svg {
+  width: 100%;
+  opacity: 0;
+  transform: scale(0);
+  transition: 300ms all;
+}
+
+.metahtml.css28 input:hover ~ .checkbox,
+.metahtml.css28 input:focus ~ .checkbox {
+  border-color: rgb(138, 179, 248);
+}
+
+.metahtml.css28 input:checked ~ .checkbox {
+  border-color: rgb(13, 90, 223);
+  background-color: rgb(22, 102, 241);
+}
+
+.metahtml.css28 input:active ~ .checkbox {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.metahtml.css28 input:checked ~ .checkbox svg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.metahtml.css28 .radio {
+  margin: 0;
+  margin: 0 5.5px 0 0;
+  padding: 0;
+  line-height: 0;
+  width: 22px;
+  height: 22px;
+  min-height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  background: white;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: 300ms all;
+  border-radius: 100px;
+}
+
+.metahtml.css28 .radio:before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  content: '';
+  display: block;
+  background-color: white;
+  border-radius: 100px;
+  opacity: 0;
+  transform: scale(0);
+  transition: 300ms all;
+}
+
+.metahtml.css28 input:hover ~ .radio,
+.metahtml.css28 input:focus ~ .radio {
+  border-color: rgb(138, 179, 248);
+}
+
+.metahtml.css28 input:active ~ .radio {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.metahtml.css28 input:checked ~ .radio {
+  border-color: rgb(13, 90, 223);
+  background-color: rgb(22, 102, 241);
+}
+
+.metahtml.css28 input:checked ~ .radio:before {
+  opacity: 1;
+  transform: scale(0.5);
+}
+
+.metahtml.css28 [cr-field="checkbox-list"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css28 [cr-field="checkbox-list"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css28 [cr-field="checkbox-list"] label + label {
+  margin-top: 7.333333333333333px;
+}
+
+.metahtml.css28 [cr-field="checkbox-visual"] {
+  overflow: hidden;
+}
+
+.metahtml.css28 [cr-field="checkbox-visual"] .items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  justify-content: space-between;
+}
+
+.metahtml.css28 [cr-field="checkbox-visual"] .item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.metahtml.css28 [cr-field="checkbox-visual"] label {
+  position: relative;
+}
+
+.metahtml.css28 [cr-field="checkbox-visual"] .bgimage {
+  background-size: cover;
+  display: inline-block;
+  background-position: center;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.metahtml.css28 [cr-field="checkbox-visual"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.metahtml.css28 [cr-field="checkbox-visual"] .tick {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 102, 241, 0.75);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.metahtml.css28 [cr-field="checkbox-visual"] .tick svg {
+  opacity: 0;
+  transition: all 300ms;
+  max-width: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.metahtml.css28 [cr-field="checkbox-visual"] .subname {
+  margin: 7px 0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.metahtml.css28 [cr-field="checkbox-visual"] input:hover ~ .bgimage .tick,
+.metahtml.css28 [cr-field="checkbox-visual"] input:focus ~ .bgimage .tick {
+  opacity: 0.5;
+}
+
+.metahtml.css28 [cr-field="checkbox-visual"] input:checked ~ .bgimage .tick,
+.metahtml.css28 [cr-field="checkbox-visual"] input:checked ~ .bgimage .tick svg {
+  opacity: 1;
+}
+
+.screen-xs .metahtml.css28 [cr-field="checkbox-visual"] .item {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.screen-xs .metahtml.css28 [cr-field="checkbox-visual"] .bgimage {
+  width: 25%;
+  padding-top: 25%;
+  vertical-align: middle;
+}
+
+.screen-xs .metahtml.css28 [cr-field="checkbox-visual"] .subname {
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5%;
+  margin-left: -4px;
+}
+
+.metahtml.css28 [cr-field="checkbox-input"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css28 [cr-field="checkbox-input"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css28 [cr-field="radio-list"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css28 [cr-field="radio-list"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css28 [cr-field="radio-list"] label + label {
+  margin-top: 7.333333333333333px;
+}
+
+.metahtml.css28 [cr-field="radio-visual"] {
+  overflow: hidden;
+}
+
+.metahtml.css28 [cr-field="radio-visual"] .items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  justify-content: space-between;
+}
+
+.metahtml.css28 [cr-field="radio-visual"] .item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.metahtml.css28 [cr-field="radio-visual"] label {
+  position: relative;
+}
+
+.metahtml.css28 [cr-field="radio-visual"] .bgimage {
+  background-size: cover;
+  display: inline-block;
+  background-position: center;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.metahtml.css28 [cr-field="radio-visual"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.metahtml.css28 [cr-field="radio-visual"] .tick {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 102, 241, 0.75);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.metahtml.css28 [cr-field="radio-visual"] .tick svg {
+  opacity: 0;
+  transition: all 300ms;
+  max-width: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.metahtml.css28 [cr-field="radio-visual"] .subname {
+  margin: 7px 0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.metahtml.css28 [cr-field="radio-visual"] input:hover ~ .bgimage .tick {
+  opacity: 0.5;
+}
+
+.metahtml.css28 [cr-field="radio-visual"] input:checked ~ .bgimage .tick,
+.metahtml.css28 [cr-field="radio-visual"] input:checked ~ .bgimage .tick svg {
+  opacity: 1;
+}
+
+.screen-xs .metahtml.css28 [cr-field="radio-visual"] .item {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.screen-xs .metahtml.css28 [cr-field="radio-visual"] .bgimage {
+  width: 25%;
+  padding-top: 25%;
+  vertical-align: middle;
+}
+
+.screen-xs .metahtml.css28 [cr-field="radio-visual"] .subname {
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5%;
+  margin-left: -4px;
+}
+
+.metahtml.css28 [cr-field="select-menu"] select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  color: black;
+  -webkit-appearance: none;
+}
+
+.metahtml.css28 [cr-field="select-menu"] .fa {
+  font-size: 20px;
+  line-height: 0;
+  opacity: 0.5;
+  vertical-align: middle;
+}
+
+.metahtml.css28 [cr-field="select-menu"] .flexgrid {
+  display: flex;
+  align-items: center;
+}
+
+.metahtml.css28 [cr-field="select-menu"] .flexgrid .left {
+  flex-grow: 1;
+  min-width: 50%;
+  word-wrap: break-word;
+}
+
+.metahtml.css28 [cr-field="file"] svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.metahtml.css28 [cr-field="file"] span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.metahtml.css28 [cr-field="file"] input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.metahtml.css28 [cr-field="file"] .clean {
+  float: right;
+  opacity: 0.5;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.metahtml.css28 [cr-field="file"] .clean:hover {
+  opacity: 1;
+}
+
+.metahtml.css28 [cr-field="file"] .flexgrid {
+  display: flex;
+  align-items: center;
+}
+
+.metahtml.css28 [cr-field="file"] .flexgrid .center {
+  flex-grow: 1;
+  min-width: 50%;
+  word-wrap: break-word;
+}
+
+.metahtml.css28 [cr-field="result"] .flexgrid.align-sides {
+  display: flex;
+  align-items: center;
+}
+
+.metahtml.css28 [cr-field="result"] .flexgrid.align-sides .left .name {
+  margin-bottom: 0;
+}
+
+.metahtml.css28 [cr-field="result"] .flexgrid.align-center .left {
+  text-align: center;
+}
+
+.metahtml.css28 [cr-field="result"] .flexgrid.align-right .left {
+  text-align: right;
+}
+
+.metahtml.css28 [cr-field="result"] .flexgrid .right {
+  flex-grow: 1;
+  min-width: 25%;
+  word-wrap: break-word;
+  text-align: right;
+  font-size: 120%;
+}
+
+.metahtml.css28 [cr-field="result"] .flexgrid.align-left .right {
+  text-align: left;
+}
+
+.metahtml.css28 [cr-field="result"] .flexgrid.align-center .right {
+  text-align: center;
+}
+
+.metahtml.css28 [cr-field="result"] .flexgrid.align-right .right {
+  text-align: right;
+}
+
+.metahtml.css28 [cr-field="privacy-button"] .open {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 80%;
+  cursor: pointer;
+}
+
+.metahtml.css28 [cr-field="privacy-button"] .open a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.metahtml.css28 [cr-field="privacy-checkbox"] {
+  font-size: 80%;
+}
+
+.metahtml.css28 [cr-field="privacy-checkbox"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css28 [cr-field="privacy-checkbox"] a {
+  vertical-align: middle;
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  color: inherit;
+  cursor: pointer;
+}
+
+.metahtml.css28 [cr-field="privacy-checkbox"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css28 [cr-field="privacy-text"] {
+  font-size: 80%;
+  text-align: center;
+}
+
+.metahtml.css28 [cr-field="privacy-text"] a {
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  color: inherit;
+  cursor: pointer;
+}
+
+.metahtml.css28 [cr-field="hidden"] {
+  opacity: 0.25;
+}
+.node.css29  { color: #333; padding-top: 5px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px }
+.node.css29 a { color: rgb(25, 100, 230) }
+
+.metahtml.css30 [cr-field] {
+  padding-bottom: 14px;
+  font-size: 14px;
+  font-family: Open Sans;
+}
+
+.metahtml.css30 .name {
+  font-weight: normal;
+  font-family: Open Sans;
+  opacity: 0.8;
+  margin-bottom: 6.5px;
+  font-size: 13px;
+  word-wrap: break-word;
+  text-transform: uppercase;;
+  letter-spacing: 0.1em;;
+}
+
+.metahtml.css30 .form-control {
+  height: auto;
+  line-height: 1.2;
+  box-shadow: none;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  padding: 12px 9.6px;
+  font-size: 14px;
+  cursor: initial;
+}
+
+.metahtml.css30 .form-control:focus,
+.metahtml.css30 .form-control:focus-within {
+  border-color: rgb(22, 102, 241);
+  background-color: rgb(252, 252, 252);
+}
+
+.metahtml.css30 .form-control + .form-control {
+  margin-top: 10px;
+}
+
+.metahtml.css30 label {
+  font-weight: normal;
+  display: block;
+  cursor: pointer;
+}
+
+.metahtml.css30 textarea {
+  resize: vertical;
+}
+
+.metahtml.css30 .checkbox {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  margin: 0 5.5px 0 0;
+  line-height: 0;
+  min-height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  background: white;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: 300ms all;
+  border-radius: 2px;
+}
+
+.metahtml.css30 .checkbox svg {
+  width: 100%;
+  opacity: 0;
+  transform: scale(0);
+  transition: 300ms all;
+}
+
+.metahtml.css30 input:hover ~ .checkbox,
+.metahtml.css30 input:focus ~ .checkbox {
+  border-color: rgb(138, 179, 248);
+}
+
+.metahtml.css30 input:checked ~ .checkbox {
+  border-color: rgb(13, 90, 223);
+  background-color: rgb(22, 102, 241);
+}
+
+.metahtml.css30 input:active ~ .checkbox {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.metahtml.css30 input:checked ~ .checkbox svg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.metahtml.css30 .radio {
+  margin: 0;
+  margin: 0 5.5px 0 0;
+  padding: 0;
+  line-height: 0;
+  width: 22px;
+  height: 22px;
+  min-height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  background: white;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: 300ms all;
+  border-radius: 100px;
+}
+
+.metahtml.css30 .radio:before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  content: '';
+  display: block;
+  background-color: white;
+  border-radius: 100px;
+  opacity: 0;
+  transform: scale(0);
+  transition: 300ms all;
+}
+
+.metahtml.css30 input:hover ~ .radio,
+.metahtml.css30 input:focus ~ .radio {
+  border-color: rgb(138, 179, 248);
+}
+
+.metahtml.css30 input:active ~ .radio {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.metahtml.css30 input:checked ~ .radio {
+  border-color: rgb(13, 90, 223);
+  background-color: rgb(22, 102, 241);
+}
+
+.metahtml.css30 input:checked ~ .radio:before {
+  opacity: 1;
+  transform: scale(0.5);
+}
+
+.metahtml.css30 [cr-field="checkbox-list"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css30 [cr-field="checkbox-list"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css30 [cr-field="checkbox-list"] label + label {
+  margin-top: 7.333333333333333px;
+}
+
+.metahtml.css30 [cr-field="checkbox-visual"] {
+  overflow: hidden;
+}
+
+.metahtml.css30 [cr-field="checkbox-visual"] .items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  justify-content: space-between;
+}
+
+.metahtml.css30 [cr-field="checkbox-visual"] .item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.metahtml.css30 [cr-field="checkbox-visual"] label {
+  position: relative;
+}
+
+.metahtml.css30 [cr-field="checkbox-visual"] .bgimage {
+  background-size: cover;
+  display: inline-block;
+  background-position: center;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.metahtml.css30 [cr-field="checkbox-visual"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.metahtml.css30 [cr-field="checkbox-visual"] .tick {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 102, 241, 0.75);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.metahtml.css30 [cr-field="checkbox-visual"] .tick svg {
+  opacity: 0;
+  transition: all 300ms;
+  max-width: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.metahtml.css30 [cr-field="checkbox-visual"] .subname {
+  margin: 7px 0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.metahtml.css30 [cr-field="checkbox-visual"] input:hover ~ .bgimage .tick,
+.metahtml.css30 [cr-field="checkbox-visual"] input:focus ~ .bgimage .tick {
+  opacity: 0.5;
+}
+
+.metahtml.css30 [cr-field="checkbox-visual"] input:checked ~ .bgimage .tick,
+.metahtml.css30 [cr-field="checkbox-visual"] input:checked ~ .bgimage .tick svg {
+  opacity: 1;
+}
+
+.screen-xs .metahtml.css30 [cr-field="checkbox-visual"] .item {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.screen-xs .metahtml.css30 [cr-field="checkbox-visual"] .bgimage {
+  width: 25%;
+  padding-top: 25%;
+  vertical-align: middle;
+}
+
+.screen-xs .metahtml.css30 [cr-field="checkbox-visual"] .subname {
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5%;
+  margin-left: -4px;
+}
+
+.metahtml.css30 [cr-field="checkbox-input"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css30 [cr-field="checkbox-input"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css30 [cr-field="radio-list"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css30 [cr-field="radio-list"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css30 [cr-field="radio-list"] label + label {
+  margin-top: 7.333333333333333px;
+}
+
+.metahtml.css30 [cr-field="radio-visual"] {
+  overflow: hidden;
+}
+
+.metahtml.css30 [cr-field="radio-visual"] .items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  justify-content: space-between;
+}
+
+.metahtml.css30 [cr-field="radio-visual"] .item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.metahtml.css30 [cr-field="radio-visual"] label {
+  position: relative;
+}
+
+.metahtml.css30 [cr-field="radio-visual"] .bgimage {
+  background-size: cover;
+  display: inline-block;
+  background-position: center;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.metahtml.css30 [cr-field="radio-visual"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.metahtml.css30 [cr-field="radio-visual"] .tick {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 102, 241, 0.75);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.metahtml.css30 [cr-field="radio-visual"] .tick svg {
+  opacity: 0;
+  transition: all 300ms;
+  max-width: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.metahtml.css30 [cr-field="radio-visual"] .subname {
+  margin: 7px 0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.metahtml.css30 [cr-field="radio-visual"] input:hover ~ .bgimage .tick {
+  opacity: 0.5;
+}
+
+.metahtml.css30 [cr-field="radio-visual"] input:checked ~ .bgimage .tick,
+.metahtml.css30 [cr-field="radio-visual"] input:checked ~ .bgimage .tick svg {
+  opacity: 1;
+}
+
+.screen-xs .metahtml.css30 [cr-field="radio-visual"] .item {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.screen-xs .metahtml.css30 [cr-field="radio-visual"] .bgimage {
+  width: 25%;
+  padding-top: 25%;
+  vertical-align: middle;
+}
+
+.screen-xs .metahtml.css30 [cr-field="radio-visual"] .subname {
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5%;
+  margin-left: -4px;
+}
+
+.metahtml.css30 [cr-field="select-menu"] select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  color: black;
+  -webkit-appearance: none;
+}
+
+.metahtml.css30 [cr-field="select-menu"] .fa {
+  font-size: 20px;
+  line-height: 0;
+  opacity: 0.5;
+  vertical-align: middle;
+}
+
+.metahtml.css30 [cr-field="select-menu"] .flexgrid {
+  display: flex;
+  align-items: center;
+}
+
+.metahtml.css30 [cr-field="select-menu"] .flexgrid .left {
+  flex-grow: 1;
+  min-width: 50%;
+  word-wrap: break-word;
+}
+
+.metahtml.css30 [cr-field="file"] svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.metahtml.css30 [cr-field="file"] span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.metahtml.css30 [cr-field="file"] input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.metahtml.css30 [cr-field="file"] .clean {
+  float: right;
+  opacity: 0.5;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.metahtml.css30 [cr-field="file"] .clean:hover {
+  opacity: 1;
+}
+
+.metahtml.css30 [cr-field="file"] .flexgrid {
+  display: flex;
+  align-items: center;
+}
+
+.metahtml.css30 [cr-field="file"] .flexgrid .center {
+  flex-grow: 1;
+  min-width: 50%;
+  word-wrap: break-word;
+}
+
+.metahtml.css30 [cr-field="result"] .flexgrid.align-sides {
+  display: flex;
+  align-items: center;
+}
+
+.metahtml.css30 [cr-field="result"] .flexgrid.align-sides .left .name {
+  margin-bottom: 0;
+}
+
+.metahtml.css30 [cr-field="result"] .flexgrid.align-center .left {
+  text-align: center;
+}
+
+.metahtml.css30 [cr-field="result"] .flexgrid.align-right .left {
+  text-align: right;
+}
+
+.metahtml.css30 [cr-field="result"] .flexgrid .right {
+  flex-grow: 1;
+  min-width: 25%;
+  word-wrap: break-word;
+  text-align: right;
+  font-size: 100%;
+}
+
+.metahtml.css30 [cr-field="result"] .flexgrid.align-left .right {
+  text-align: left;
+}
+
+.metahtml.css30 [cr-field="result"] .flexgrid.align-center .right {
+  text-align: center;
+}
+
+.metahtml.css30 [cr-field="result"] .flexgrid.align-right .right {
+  text-align: right;
+}
+
+.metahtml.css30 [cr-field="privacy-button"] .open {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 80%;
+  cursor: pointer;
+}
+
+.metahtml.css30 [cr-field="privacy-button"] .open a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.metahtml.css30 [cr-field="privacy-checkbox"] {
+  font-size: 80%;
+}
+
+.metahtml.css30 [cr-field="privacy-checkbox"] span {
+  vertical-align: middle;
+}
+
+.metahtml.css30 [cr-field="privacy-checkbox"] a {
+  vertical-align: middle;
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  color: inherit;
+  cursor: pointer;
+}
+
+.metahtml.css30 [cr-field="privacy-checkbox"] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.metahtml.css30 [cr-field="privacy-text"] {
+  font-size: 80%;
+  text-align: center;
+}
+
+.metahtml.css30 [cr-field="privacy-text"] a {
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  color: inherit;
+  cursor: pointer;
+}
+
+.metahtml.css30 [cr-field="hidden"] {
+  opacity: 0.25;
+}
+.node.css31  { color: #333; padding-top: 4px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px }
+.node.css31 a { color: rgb(25, 100, 230) }
+
+.btn.css32 { background-color: rgb(0, 103, 116);border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;border-style: solid;border-top-width: 0px;border-bottom-width: 0px;border-left-width: 0px;border-right-width: 0px;border-color: rgb(0, 83, 93);padding-top: 14px;padding-bottom: 14px;font-size: 16px;color: rgb(255, 255, 255)!important; } .btn.css32:hover, .btn.css32.hover { background-color: rgb(0, 93, 104);border-color: rgb(0, 66, 74);color: rgb(255, 255, 255)!important; } .btn.css32:active, .btn.css32.active { background-color: rgb(0, 84, 94);border-color: rgb(0, 74, 83);color: rgb(255, 255, 255)!important; } .btn.css32:before {  } .btn.css32:active:before, .btn.css32.active:before { background-color: rgb(0, 84, 94); }
+.metahtml.css33 .modal1-root {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: none;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: 300ms all ease-out;
+}
+
+.metahtml.css33 .modal1-root.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.metahtml.css33 .modal1-root.is-hiding {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.metahtml.css33 .modal1-header {
+  padding: 15px;
+  color: rgb(25, 25, 25);
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.metahtml.css33 .modal1-body {
+  position: relative;
+  padding: 20px;
+}
+
+.metahtml.css33 .modal1-title {
+  margin-right: 20px;
+  text-align: left;
+}
+
+.metahtml.css33 .modal1-close {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  float: right;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1;
+  opacity: 0.4;
+  margin-top: -2px;
+}
+
+.metahtml.css33 .modal1-close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.textable.css34  { text-align: left; font-family: "Open Sans"; font-size: 16px; line-height: 1.4; letter-spacing: 0em; opacity: 1 }
+.screen-xs .textable.css34  { text-align: center!important }
+
+.node.css35  { color: #333; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px }
+.node.css35 a { color: rgb(25, 100, 230) }
+
+.textable.css36  { text-align: left; font-family: "Open Sans"; font-size: 16px; line-height: 1.4; letter-spacing: 0em; opacity: 1 }
+
+.node.css37  { color: #333; padding-top: 3px; padding-bottom: 10px; padding-left: 5px; padding-right: 5px }
+.node.css37 a { color: rgb(25, 100, 230) }
+
+.node.css38 > .wrapper1 { background-color: white }
+.node.css38  { color: #333 }
+.node.css38  > .padding_top { padding-top: 29px }
+.node.css38  > .padding_bottom { padding-bottom: 8px }
+.node.css38 a { color: rgb(25, 100, 230) }
+
+.node.css39  { color: #333; padding-top: 5px; padding-bottom: 0px; padding-left: 5px; padding-right: 5px }
+.node.css39 a { color: rgb(25, 100, 230) }
+
+.textable.css40  { text-align: center; font-family: "TTNorms Medium"; font-size: 18px; line-height: 1.1; letter-spacing: 0em; opacity: 1 }
+.screen-xs .textable.css40  { text-align: center!important }
+
+.node.css41  { color: #333; padding-top: 0px; padding-bottom: 0px; padding-left: 5px; padding-right: 5px }
+.node.css41 a { color: rgb(25, 100, 230) }
+
+.btn.css42 { background-color: rgba(0, 0, 0, 0);border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;border-style: solid;border-top-width: 0px;border-bottom-width: 0px;border-left-width: 0px;border-right-width: 0px;border-color: rgb(0, 0, 0);padding-top: 8px;padding-bottom: 8px;font-size: 14px;text-decoration: underline;color: rgb(0, 0, 0)!important; } .btn.css42:hover, .btn.css42.hover { background-color: rgba(0, 0, 0, 0);border-color: rgb(0, 0, 0);color: rgb(0, 0, 0)!important; } .btn.css42:active, .btn.css42.active { background-color: rgba(0, 0, 0, 0);border-color: rgb(0, 0, 0);color: rgb(0, 0, 0)!important; } .btn.css42:before {  } .btn.css42:active:before, .btn.css42.active:before { background-color: rgba(0, 0, 0, 0); }
+.node.css43  { color: #333; padding-top: 0px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px }
+.node.css43 a { color: rgb(25, 100, 230) }
+
+.node.css44 > .wrapper1 { background-color: white }
+.node.css44  { color: #333 }
+.node.css44  > .padding_top { padding-top: 44px }
+.node.css44  > .padding_bottom { padding-bottom: 44px }
+.node.css44 a { color: rgb(25, 100, 230) }
+
+.area.screen-lg { min-width: 1200px; }.area.screen-lg .container { width: 1140px; }.area.screen-lg .container.soft { max-width: 1140px; }.area.screen-md { min-width: 960px; }.area.screen-md .container { width: 940px; }.area.screen-md .container.soft { max-width: 940px; }.area.screen-sm { min-width: 720px; }.area.screen-sm .container { width: 720px; }.area.screen-sm .container.soft { max-width: 720px; }.area.screen-xs .container { max-width: 737px; }
+</style>
+<script type="text/javascript">window._trackJs = {    token: "4fd557ccb06a4bd28e7b90da188cd54b",    application: "production",    enabled: location.href.indexOf("notrackjs") < 0,};</script>
+
+<link type="text/css" rel="stylesheet" href="./2mlsm1us.plp7.ru_files/vendors-async.css">
+</head><body class="area font-text-opensans font-text-ttnormsmedium screen-lg" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjEwIiwic2NvcmUiOjIwMDEwfV0=">
+  <div class="area-wrapper" bis_skin_checked="1">
+
+                <div class="node css4 section-clear section" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="padding_top" bis_skin_checked="1">
+
+                </div>
+                <div class="container" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css2 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 230px;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css0 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="wrapper1" bis_skin_checked="1">
+                  <div class="wrapper2" bis_skin_checked="1">
+
+                  </div>
+                </div>
+                <p class="textable css1">
+                  <span style="color: rgb(255, 255, 255);">
+                  <span style="text-align: inherit; letter-spacing: 0.114286em; caret-color: auto;">&nbsp;قلب صحي</span></span></p>
+                </div>
+                </div>
+                </div>
+                <div class="col" style="width: 100%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+
+                  </div>
+                </div>
+                <div class="col" style="width: 230px;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css2 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css3">العربية/الإنجليزية</p>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="padding_bottom" bis_skin_checked="1">
+
+                </div>
+              </div>
+                <div class="node css7 section-clear section xs-hidden" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="padding_top" bis_skin_checked="1">
+
+                </div>
+                <div class="wrapper1" bis_skin_checked="1">
+                  <div class="wrapper2" bis_skin_checked="1">
+
+                  </div>
+                </div>
+                <div class="container" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css6 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 16.6667%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css6 widget-button widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="button-container center xs-none" bis_skin_checked="1">
+                  <div class="button-wrapper" bis_skin_checked="1"><button class="btn btn-legacy css5 font-text" data-action="formscroll">
+                  <div class="pad-left" style="width: 12px;" bis_skin_checked="1">
+                  </div>
+                <div class="btn-content" bis_skin_checked="1">
+                  <span class="text">وزارة</span>
+                </div>
+                <div class="pad-right" style="width: 12px;" bis_skin_checked="1">
+                </div></button>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 16.6667%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css6 widget-button widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="button-container center xs-none" bis_skin_checked="1">
+                  <div class="button-wrapper" bis_skin_checked="1"><button class="btn btn-legacy css5 font-text" data-action="formscroll">
+                  <div class="pad-left" style="width: 12px;" bis_skin_checked="1">
+                  </div>
+                <div class="btn-content" bis_skin_checked="1">
+                  <span class="text">الأموال</span>
+                </div>
+                <div class="pad-right" style="width: 12px;" bis_skin_checked="1">
+                </div></button>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 16.6667%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css6 widget-button widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="button-container center xs-none" bis_skin_checked="1">
+                  <div class="button-wrapper" bis_skin_checked="1"><button class="btn btn-legacy css5 font-text" data-action="formscroll">
+                  <div class="pad-left" style="width: 12px;" bis_skin_checked="1">
+                  </div>
+                <div class="btn-content" bis_skin_checked="1">
+                  <span class="text">أنشطة</span>
+                </div>
+                <div class="pad-right" style="width: 12px;" bis_skin_checked="1">
+                </div></button>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 16.6667%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css6 widget-button widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="button-container center xs-none" bis_skin_checked="1">
+                  <div class="button-wrapper" bis_skin_checked="1"><button class="btn btn-legacy css5 font-text" data-action="formscroll">
+                  <div class="pad-left" style="width: 12px;" bis_skin_checked="1">
+                  </div>
+                <div class="btn-content" bis_skin_checked="1">
+                  <span class="text">وثائق</span>
+                </div>
+                <div class="pad-right" style="width: 12px;" bis_skin_checked="1">
+                </div></button>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 16.6667%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css6 widget-button widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="button-container center xs-none" bis_skin_checked="1">
+                  <div class="button-wrapper" bis_skin_checked="1"><button class="btn btn-legacy css5 font-text" data-action="formscroll">
+                  <div class="pad-left" style="width: 12px;" bis_skin_checked="1">
+                  </div>
+                <div class="btn-content" bis_skin_checked="1">
+                  <span class="text">مركز الصحافة</span>
+                </div>
+                <div class="pad-right" style="width: 12px;" bis_skin_checked="1">
+                </div></button>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 16.6667%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css6 widget-button widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="button-container center xs-none" bis_skin_checked="1">
+                  <div class="button-wrapper" bis_skin_checked="1"><button class="btn btn-legacy css5 font-text" data-action="formscroll">
+                  <div class="pad-left" style="width: 12px;" bis_skin_checked="1">
+                  </div>
+                <div class="btn-content" bis_skin_checked="1">
+                  <span class="text">مسابقات</span>
+                </div>
+                <div class="pad-right" style="width: 12px;" bis_skin_checked="1">
+                </div></button>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="padding_bottom" bis_skin_checked="1">
+
+                </div>
+              </div>
+                <div class="node css38 section-clear section" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="padding_top" bis_skin_checked="1">
+
+                </div>
+                <div class="container" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css8 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden--><h2 class="textable css9">
+                  <div style="direction: rtl;" bis_skin_checked="1">
+                    <strong style="color: rgb(0, 0, 0); letter-spacing: 0em; text-align: inherit; caret-color: auto;">عمري 78 سنة وتمكنت من التخلص من ارتفاع ضغط الدم</strong>
+                  </div></h2>
+                </div>
+                <div class="node css14 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="wrapper1" bis_skin_checked="1">
+                  <div class="wrapper2" bis_skin_checked="1">
+
+                  </div>
+                </div>
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 66.6667%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css10 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css11"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: rgb(0, 0, 0); letter-spacing: 0em; text-align: inherit; caret-color: auto;">استطاع التخلص من ارتفاع ضغط الدم والصداع</span>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 33.3333%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css10 css12 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="bgimage bg-contain"  data-lazy-bgimage_quality="8" bis_skin_checked="1">
+                  <div class="inner" bis_skin_checked="1"><img class="" src="./2mlsm1us.plp7.ru_files/07afa96ab3f09c820fe2d6045364e212.jpg" alt="">
+                <div class="proportions" bis_skin_checked="1">
+
+                </div>
+              </div>
+              </div><noscript><img src="./2mlsm1us.plp7.ru_files/07afa96ab3f09c820fe2d6045364e212.jpg" alt=""></noscript>
+              </div>
+                <div class="node css10 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                  <p class="textable css13"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: rgb(0, 0, 0); letter-spacing: 0em; text-align: inherit; caret-color: auto;">حمدان</span>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                  <p class="textable css16"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">لفترة طويلة عانيت من الضغط العالي. نصحني المختصين  بأساليب  لم تساعد على الإطلاق ، ولم يكن هناك</span>
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">أموال لهذا الغرض.</span>
+                </div><p></p>
+              </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                  <p class="textable css16"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">كل يوم لاحظت هذه الأعراض:</span>
+                </div><p></p>
+              </div>
+                <div class="node css15 widget-max-width widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div style="max-width: 600px; position: relative; margin-left: auto;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17">
+                    <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;"><strong>الصداع بأنواعه</strong></span></p>
+                  </div>
+                </div>
+                </div>
+                <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="color: inherit; letter-spacing: 0em; text-align: inherit; caret-color: auto;">ضيق التنفس والذبحة الصدرية</strong>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="color: inherit; letter-spacing: 0em; text-align: inherit; caret-color: auto;">تدهور السمع والبصر</strong>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;"><strong>الضغط المرتفع</strong></span>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="color: inherit; letter-spacing: 0em; text-align: inherit; caret-color: auto;">وجع في العضلات والمفاصل</strong>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="color: inherit; letter-spacing: 0em; text-align: inherit; caret-color: auto;">الأرق</strong>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                  <p class="textable css16"></p>
+                <!-- <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; letter-spacing: 0em; text-align: inherit; caret-color: auto;">ما إن كنت محظوظًا بزيارة طبيب أجنبي أخبر ما يعني أنهم يستخدمون في الخارج.</span>
+                </div> -->
+                <p></p>
+              </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden--><h3 class="textable css18">
+                  <div style="direction: rtl;" bis_skin_checked="1">
+                    <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">وفقا للمختص :</span>
+                  </div></h3>
+                </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="xs-force-center bgnormal" style="text-align: center;" bis_skin_checked="1"><img class="" alt="" src="./2mlsm1us.plp7.ru_files/8520bfa53e9f8e19f19eeec723a7ae37.jpg" style="width: 450px;" data-lazy-image_quality="8">
+                </div><noscript><img src="//f2.lpcdn.site/1ca8165e7cd50d144a756f1bb234ce54/8520bfa53e9f8e19f19eeec723a7ae37.jpg" alt=""></noscript>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css16"></p>
+                <div style="direction: rtl;" bis_skin_checked="1"><em style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">
+                  <span style="font-family: Georgia;">«بمرور الوقت يهرم جسم الإنسان. وإذا كنت حريصاً وقمت بتنظيف أوعيتك الدموية، فأمامك الفرصة في ان تتخلص من مشاكل الأوعية الدموية الملوثة دون أن تشعر بألم في الأعضاء أو ألم في المفاصل وسيعمل الجسم بشكل ممتاز. بمعنى آخر، يمكن لتنظيف الأوعية الدموية أن يخلصك من جميع معاناتك المتصلة بالضغط و المشاكل القلب و الأوعية الدموية وهذه ليست مجرد نظرية. إنما اطبقها بصورة شخصية. تجاوز كل مَنْ استمعوا إلى نصيحتي هذه المشاكل بسهولة و يسر .»</span></em>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                  <p class="textable css16"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; letter-spacing: 0em; text-align: inherit; caret-color: auto;"><h1>- ما هي المشاكل التي يؤدي إليها تلوث الأوعية ؟</h1></span>
+                </div><p></p>
+              </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                  <p class="textable css16"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">- الجسم كله يعاني. لكن في البداية، تتضرر الأعضاء والأجهزة التي تتصل مباشرة بالدورة الدموية – نظام</span>
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">القلب والأوعية الدموية.</span>
+                </div><p></p>
+              </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden--><h2 class="textable css20">
+                  <div style="direction: rtl;" bis_skin_checked="1">
+                    <span style="color: inherit; letter-spacing: 0em; text-align: inherit; caret-color: auto;">يسبب تلوث الأوعية الدموية مشاكل مثل:</span>
+                  </div></h2>
+                </div>
+                <div class="node css15 widget-max-width widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div style="max-width: 820px; position: relative; margin-left: auto;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="xs-force-center bgnormal" style="text-align: center;" bis_skin_checked="1"><img class="" alt="" src="./2mlsm1us.plp7.ru_files/37c442c8af195831f06ab5d8716c26b5.jpg" style="width: 311px;" data-lazy-image_quality="8">
+                </div><noscript><img src="//f2.lpcdn.site/1ca8165e7cd50d144a756f1bb234ce54/37c442c8af195831f06ab5d8716c26b5.jpg" alt=""></noscript>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="letter-spacing: 0em; text-align: inherit; caret-color: auto; color: rgb(238, 29, 36);">تصلب الشرايين</strong>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="xs-force-center bgnormal" style="text-align: center;" bis_skin_checked="1"><img class="" alt="" src="./2mlsm1us.plp7.ru_files/7cd6b9f9a5cbda8c7d218061dcb8f970.jpg" style="width: 320px;" data-lazy-image_quality="8">
+                </div><noscript><img src="//f2.lpcdn.site/1ca8165e7cd50d144a756f1bb234ce54/7cd6b9f9a5cbda8c7d218061dcb8f970.jpg" alt=""></noscript>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="letter-spacing: 0em; text-align: inherit; caret-color: auto; color: rgb(238, 29, 36);">القلب الإقفاري</strong>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="xs-force-center bgnormal" style="text-align: center;" bis_skin_checked="1"><img class="" alt="" src="./2mlsm1us.plp7.ru_files/04ee6fcc60479f535153a75333c43f55.jpg" style="width: 332.8px;" data-lazy-image_quality="8">
+                </div><noscript><img src="//f2.lpcdn.site/1ca8165e7cd50d144a756f1bb234ce54/04ee6fcc60479f535153a75333c43f55.jpg" alt=""></noscript>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="letter-spacing: 0em; text-align: inherit; caret-color: auto; color: rgb(238, 29, 36);">السكتة الدماغية</strong>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="xs-force-center bgnormal" style="text-align: center;" bis_skin_checked="1"><img class="" alt="" src="./2mlsm1us.plp7.ru_files/a56b02dbf446046db3f178cfeaf15704.jpg" style="width: 299px;" data-lazy-image_quality="8">
+                </div><noscript><img src="//f2.lpcdn.site/1ca8165e7cd50d144a756f1bb234ce54/a56b02dbf446046db3f178cfeaf15704.jpg" alt=""></noscript>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="letter-spacing: 0em; text-align: inherit; caret-color: auto; color: rgb(238, 29, 36);">ارتفاع ضغط الدم</strong>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="xs-force-center bgnormal" style="text-align: center;" bis_skin_checked="1"><img class="" alt="" src="./2mlsm1us.plp7.ru_files/678e3c80a8aed7874558ce5b4595f13d.jpg" style="width: 348px;" data-lazy-image_quality="8">
+                </div><noscript><img src="//f2.lpcdn.site/1ca8165e7cd50d144a756f1bb234ce54/678e3c80a8aed7874558ce5b4595f13d.jpg" alt=""></noscript>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: rgb(238, 29, 36);">
+                  <span style="text-align: inherit; letter-spacing: 0em; caret-color: auto;"><strong>توسع الأوردة</strong></span></span>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="xs-force-center bgnormal" style="text-align: center;" bis_skin_checked="1"><img class="" alt="" src="./2mlsm1us.plp7.ru_files/d26b9c60aeb006c7ba204392254880e9.jpg" style="width: 313.78px;" data-lazy-image_quality="8">
+                </div><noscript><img src="//f2.lpcdn.site/1ca8165e7cd50d144a756f1bb234ce54/d26b9c60aeb006c7ba204392254880e9.jpg" alt=""></noscript>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: rgb(238, 29, 36);">
+                  <span style="text-align: inherit; letter-spacing: 0em; caret-color: auto;"><strong>التخثر أو التجلط الوريدي و الشرياني</strong></span></span>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden--><h3 class="textable css18">
+                  <div style="direction: rtl;" bis_skin_checked="1">
+                    <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">&nbsp;بعد سن الثلاثين، من الضروري تنظيف الأوعية الدموية مرة واحدة على الأقل كل 3 سنوات. وبهذه</span>
+                    <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">
+                    <span style="color: inherit; letter-spacing: 0em; text-align: inherit; caret-color: auto;">الطريقة، ستنعم بصحة قوية.&nbsp;</span></span>
+                  </div></h3>
+                </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                  <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">تتمتع الأوعية الدموية بالقدرة على جمع الشوائب، خاصة عند كبار السن. ولهذا، ليس من الضروري تناول</span>
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">البرغر والبطاطس المقلية طوال اليوم. حتى بعد تناول السجق أو البيض المقلي، فإن كمية معينة من</span>
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">الكوليسترول ستتراكم وتترسب في خلايا الدم، والتي ستتزايد بمرور الوقت.</span>
+                </div><p></p>
+              </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 38.4783%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="xs-force-center bgnormal" style="text-align: center;" bis_skin_checked="1"><img class="" alt="" src="./2mlsm1us.plp7.ru_files/7530f38abef613a5928522e5e6eaf90a.png" style="width: 384.24px;" data-lazy-image_quality="8">
+                </div><noscript><img src="//f2.lpcdn.site/1ca8165e7cd50d144a756f1bb234ce54/7530f38abef613a5928522e5e6eaf90a.png" alt=""></noscript>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 61.5217%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css16"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; letter-spacing: 0em; text-align: inherit; caret-color: auto;">‍حتى وقت قريب، كانت عملية تنظيف الأوعية الدموية تستغرق عدة أشهر. لجمع الأعشاب اوالبحث عنها في&nbsp;</span>
+                </div>
+                <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">
+                  <div style="direction: rtl;" bis_skin_checked="1">
+                    <span style="color: inherit; letter-spacing: 0em; text-align: inherit; caret-color: auto;"> </span>
+                  </div></span>
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">
+                  <div style="direction: rtl;" bis_skin_checked="1">
+                    <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">السوق أو أطلبها عبر الإنترنت ومن ثم كان عليك ان تخلطها معاً بطريقة معينة . الآن لا يجب عليك فعل
+                    <span style="color: inherit; letter-spacing: 0em; text-align: inherit; caret-color: auto;">&nbsp;ذلك، لان العلماء إبتكروا مكمل غذائي ممتاز سعره رخيص من شأنه تنظيف الأوعية الدموية اسمه&nbsp;</span></span>
+                    <span style="text-align: inherit; letter-spacing: 0em; color: rgb(0, 166, 80); caret-color: auto;">
+                    <span style="letter-spacing: 0em; text-align: inherit; caret-color: auto;"><strong>CardioFort </strong></span></span>
+                    <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">
+                    <span style="color: rgb(0, 166, 80); letter-spacing: 0em; text-align: inherit; caret-color: auto;">&nbsp;</span>
+                    <span style="color: inherit; letter-spacing: 0em; text-align: inherit; caret-color: auto;">. بشكل عام، الغرض منه هو تطبيع ضغط الدم و التخلص من ارتفاع ضغط الدم، ولكن هذا التطبيع يحدث نتيجةً لتنظيف الأوعية. لذلك، هذا المنتج مناسب تماماً لهذا الغرض.</span></span>
+                  </div></span><p></p>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                  <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">نريد أيضًا أن نشير إلى أن هذا المنتج لا يحتوي على مواد كيمياوية، ولكن فقط مقتطفات عالية التركيز من</span>
+                </div>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">النباتات مفيدة من شأنها تنظيف الأوعية، وبالتالي فهو ليس غير ضار بالجسم فحسب، ولكنه مفيد جدًا أيضًا.</span>
+                </div><p></p>
+              </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                  <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">هذا المنتج هو المنتج الرئيسي الأن لكل المصابين بمشاكل القلب و الأوعية الدموية الملوثة لمكافحة ارتفاع</span>
+                </div>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">ضغط الدم. يمكن لأي شخص شراء هذا المنتج الأن في الجزائر .</span>
+                </div><p></p>
+              </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                  <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">المزيد حول كيفية الحصول على </span>
+                  <span style="color: rgb(0, 166, 80); text-align: inherit; letter-spacing: 0em; caret-color: auto;"><strong>CardioFort </strong></span>
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;"> مع الشحن لأي مكان في الجزائر</span>
+                </div><p></p>
+              </div>
+                <div class="node css15 widget-button widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="button-container center xs-none" bis_skin_checked="1">
+                  <div class="button-wrapper" bis_skin_checked="1"><a class="btn btn-legacy css21 font-text" data-action="link" href="#forma" target="_self">
+                  <div class="pad-left" style="width: 28px;" bis_skin_checked="1">
+                  </div>
+                <div id="forma" class="btn-content" bis_skin_checked="1">
+                  <span dir="rtl" class="text">الحصول على Cardiofort </span>
+                </div>
+                <div class="pad-right" style="width: 28px;" bis_skin_checked="1">
+                </div></a>
+              </div>
+              </div>
+              </div>
+                <div class="node css22 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="wrapper1" bis_skin_checked="1">
+                  <div class="wrapper2" bis_skin_checked="1">
+
+                  </div>
+                </div>
+                <p class="textable css13">
+                  <span style="font-size: 140%;">
+                  <span style="color: rgb(238, 29, 36);"><strong>5999DA</strong></span></span><br></p>
+                <div style="direction: rtl; text-align: center;" bis_skin_checked="1">
+                  <span style="font-size: 110%; color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;"><strong>عند شرائك دورة&nbsp;</strong></span>
+                  <span style="font-size: 110%; text-align: inherit; letter-spacing: 0em; color: rgb(0, 166, 80);">
+                  <span style="text-align: inherit; letter-spacing: 0em; caret-color: auto;"><strong>CardioFort </strong></span></span>
+                </div><p></p>
+              </div>
+                <div class="node css24 widget-max-width widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div style="max-width: 1225px; position: relative; margin-left: auto;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden--><h2 class="textable css23">
+                  <div style="direction: rtl;" bis_skin_checked="1">
+                    <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">التعليقات</strong>
+                  </div></h2>
+                </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 75%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+
+                  </div>
+                </div>
+                <div class="col" style="width: 25%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 33.3333%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="xs-force-center bgnormal" style="text-align: center;" bis_skin_checked="1"><img class="" alt="" src="./2mlsm1us.plp7.ru_files/6cb4b4a1587efeff962611698fe972e9.jpg" style="width: 180px;" data-lazy-image_quality="8">
+                </div><noscript><img src="./2mlsm1us.plp7.ru_files/6cb4b4a1587efeff962611698fe972e9.jpg" alt=""></noscript>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 33.3333%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">كنت أشعر دائمًا بالتعب ودائمًا ما كنت أعاني من حالة من الخمول. لم أكن أعرف ما هي المشكلة. لقد أمضيت يومًا كاملاً لا أفعل شيئًا. لم يكن</span>
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">لدي شهية ، ولم أكن آكل أي شيء. كان ضغط دمي غير مستقر أبداً. كان يتحرك صعودا وهبوطا باستمرار. كنت اريد معرفة ما هي المشكلة. لقد</span>
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">أجريت اختبارات مختلفة وعرفت إن مستوى الكوليسترول لدي كان مرتفعًا جدًا. بالطبع هذا خطأي. لقد جئت إلى هذا الموقف نتيجة لنظام</span>
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">غذائي غير صحي. ثم انتبهت لما أكلته ، لم يكن الأمر سهلاً ، لكنني بدأت في تناول الطعام الصحي. إذا كنت ترغب في التخلص من الكوليسترول في أسرع</span>
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">وقت ممكن ، فأنت بحاجة إلى مساعدة جسمك. اشتريت&nbsp;</span>
+                  <span style="text-align: inherit; letter-spacing: 0em; color: rgb(0, 166, 80);"><strong>CardioFort </strong></span>
+                  <span style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">. نصحني به صديق في العمل. لحسن الحظ ، أنا الآن بصحة جيدة.</span>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 33.3333%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css13"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">عائشة</strong>
+                </div><p></p>
+              </div>
+                <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="roundimage" style="text-align: center;" bis_skin_checked="1">
+                  <div class="round"  data-lazy-bgimage_quality="8" bis_skin_checked="1"><img class="" src="./2mlsm1us.plp7.ru_files/ava (1).jpg" alt="" style="width: 60px;">
+                  </div>
+                </div><noscript><img src="./2mlsm1us.plp7.ru_files/ava (1).jpg" alt=""></noscript>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 75%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"><br></p>
+                  </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                  <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">لقد قمت بالتسوق عبر الإنترنت لأول مرة في حياتي. إنه أمر سهل. لقد كتبت معلومات الاتصال الخاصة بي. بعد 5 دقائق اتصل موضف خدمة</strong>
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;"><strong>العملاء هاتفيا. لقد كان رجلاً لطيفًا للغاية. لقد أكدت تفاصيل طلبي ، مثل عنوان الشحن. قال إن المنتج سيصل لي في غضون أسبوع. هذه هي</strong></strong></strong>
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;"><strong>الطريقة التي تعمل بها خدمة العملاء الممتازة.</strong></strong></strong>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 25%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css13"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">مصطفى</strong>
+                </div><p></p>
+              </div>
+                <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="roundimage" style="text-align: center;" bis_skin_checked="1">
+                  <div class="round"  data-lazy-bgimage_quality="8" bis_skin_checked="1"><img class="" src="./2mlsm1us.plp7.ru_files/ava (2).jpg" alt="" style="width: 60px;">
+                  </div>
+                </div><noscript><img src="./2mlsm1us.plp7.ru_files/ava (2).jpg" alt=""></noscript>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 75%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+
+                  </div>
+                </div>
+                <div class="col" style="width: 25%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 25%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="xs-force-center bgnormal" style="text-align: center;" bis_skin_checked="1"><img class="" alt="" src="./2mlsm1us.plp7.ru_files/ccfd79d8c74cb5fcf60b3cec77b51267.jpg" style="width: 201.6px;" data-lazy-image_quality="8">
+                </div>
+                
+                <noscript><img src="./2mlsm1us.plp7.ru_files/ava (3).jpg" alt=""></noscript>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 50%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">جربت المكمل الغذائي 
+                  <span style="color: rgb(0, 166, 80);">CardioFort </span> الشهر الماضي. في بعض الأحيان كان الضغط خارج عن المألوف وكنت اعاني أيضًا من عدم</strong>
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">
+                    <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;"><strong>انتظام دقات القلب. بعد 2 - 2.5 أسابيع من بدء استعمال المنتج ، عاد الضغط إلى طبيعته. الآن أشعر أنني شخص يتمتع بصحة جيدة.</strong></strong></strong>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 25%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css13"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">حسام</strong>
+                </div><p></p>
+              </div>
+                <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="roundimage" style="text-align: center;" bis_skin_checked="1">
+                  <div class="round"  data-lazy-bgimage_quality="8" bis_skin_checked="1"><img class="" src="./2mlsm1us.plp7.ru_files/ava (4).jpg" alt="" style="width: 60px;">
+                  </div>
+                </div><noscript><img src="./2mlsm1us.plp7.ru_files/ava (4).jpg" alt=""></noscript>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 75%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"><br></p>
+                  </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                  <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">قرأت المزيد عن هذا المكمل على موقع الويب الخاص بالشركة.</strong>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 25%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css13"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">مراد</strong>
+                </div><p></p>
+              </div>
+                <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="roundimage" style="text-align: center;" bis_skin_checked="1">
+                  <div class="round"  data-lazy-bgimage_quality="8" bis_skin_checked="1"><img class="" src="./2mlsm1us.plp7.ru_files/ava (5).jpg" alt="" style="width: 60px;">
+                  </div>
+                </div><noscript><img src="./2mlsm1us.plp7.ru_files/ava (5).jpg" alt=""></noscript>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="node css15 widget-grid widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="grid valign-middle paddings-20px xs-wrap" bis_skin_checked="1">
+                  <div class="gridwrap" bis_skin_checked="1">
+                  <div class="col" style="width: 75%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css17"><br></p>
+                  </div>
+                <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                  <p class="textable css17"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">
+                  <span style="color: rgb(0, 166, 80);">CardioFort </span> افضل طريقة لتخفيض الكوليسترول ليس له أي آثار جانبية لأنه مصنوع من مكونات طبيعية</strong>
+                </div><p></p>
+              </div>
+              </div>
+              </div>
+                <div class="col" style="width: 25%;" bis_skin_checked="1">
+                  <div class="cont" bis_skin_checked="1">
+                  <div class="node css15 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                    <p class="textable css13"></p>
+                <div style="direction: rtl;" bis_skin_checked="1">
+                  <strong style="color: inherit; text-align: inherit; letter-spacing: 0em; caret-color: auto;">محمد</strong>
+                </div><p></p>
+              </div>
+                <div class="node css15 css19 widget-image widget" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div class="roundimage" style="text-align: center;" bis_skin_checked="1">
+                  <div class="round"  data-lazy-bgimage_quality="8" bis_skin_checked="1"><img class="" src="./2mlsm1us.plp7.ru_files/ava (6).jpg" alt="" style="width: 60px;">
+                  </div>
+                </div><noscript><img src="./2mlsm1us.plp7.ru_files/ava (6).jpg" alt=""></noscript>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="node css37 widget-form2 cr-form widget lazy" data-form="{&quot;name&quot;:&quot;Форма&quot;,&quot;type&quot;:&quot;order&quot;,&quot;integrations&quot;:[],&quot;after&quot;:&quot;msg&quot;,&quot;msg&quot;:&quot;Спасибо!\nВаш комментарий отправлен&quot;,&quot;url&quot;:&quot;/thankyou&quot;,&quot;addhtml&quot;:&quot;&lt;!-- Этот код будет вставлен перед закрывающим тегом BODY --&gt;&quot;,&quot;js&quot;:&quot;alert(\&quot;Этот код выполняется после успешного отправления заявки.\&quot;);&quot;,&quot;sequence&quot;:&quot;simultaneous&quot;}" data-isquiz="false" bis_skin_checked="1"><!--pseudo-hidden-->
+                <div style="max-width: 562px; position: relative; margin-left: auto; margin-right: auto;" bis_skin_checked="1">
+                  <div class="metahtml css25" bis_skin_checked="1">
+                  <div class="form1-cover" bis_skin_checked="1">
+	
+  <div cr-form-container="" colorside="cover_bgcolored?cover_bgcolor.colorside():_colorside" bis_skin_checked="1">
+    <div class="cont" bis_skin_checked="1">
+    <div class="node css26 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden--><h3 class="textable css27">
+    <div style="direction: rtl;" bis_skin_checked="1">
+      <span style="background-color: initial; color: inherit; text-align: inherit; letter-spacing: 0.04em; caret-color: auto;">لإضافة تعليق</span>
+    </div></h3>
+  </div>
+  <h1 style="text-align: center;">
+    لإضافة تعليق 
+  </h1> 
+  <div  style="display: block;">
+  
+        <!-- add comment -->
+         <!-- محتوى صفحة الهبوط -->
+        
+        
+    <div id="comments-section">
+      <h2>التعليقات</h2>
+      <hr>
+      <div id="comments-list">
+        <!-- عرض التعليقات الموجودة بالفعل -->
+        <!-- يمكنك استخدام لغة البرمجة لجلب التعليقات من قاعدة البيانات أو أي مكان آخر -->
+      </div>
+  
+      <!-- نموذج إضافة تعليق -->
+      <form id="comment-form">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="comment">التعليق:</label>
+        <textarea id="comment" name="comment" required></textarea>
+  
+        <label for="user-image">صورتك الشخصية:</label>
+        <input type="file" id="user-image" name="user-image" accept="image/*" required>
+  
+        <label for="product-image">صورة المنتج في يدك:</label>
+        <input type="file" id="product-image" name="product-image" accept="image/*" required>
+  
+        <button type="button" onclick="addComment()">أضف تعليقك</button>
+      </form>
+    </div>
+  
+        </div>
+  
+  
+  <script>
+        function addComment() {
+    var name = document.getElementById('name').value;
+    var commentText = document.getElementById('comment').value;
+    var userImageInput = document.getElementById('user-image');
+    var productImageInput = document.getElementById('product-image');
+  
+    var userImageReader = new FileReader();
+    userImageReader.onload = function (e) {
+      var userImage = e.target.result;
+  
+      var productImageReader = new FileReader();
+      productImageReader.onload = function (e) {
+        var productImage = e.target.result;
+  
+        var newComment = document.createElement('div');
+        newComment.className = 'comment';
+  
+        // إضافة التعليق والصورتين إلى العنصر الجديد
+        newComment.innerHTML = `
+    
+  
+    <img src="${userImage}" alt="${name}" class="user-image">
+    <div class="comment-details">
+      <p><strong>${name}:</strong> ${commentText}</p>
+    </div>
+    <img src="${productImage}" alt="Product" class="product-image hand"> <!-- إضافة الكلاس hand هنا -->`
+  ;
+  
+        document.getElementById('comments-list').appendChild(newComment);
+  
+        // إعادة تعيين قيم النموذج
+        document.getElementById('name').value = '';
+        document.getElementById('comment').value = '';
+        userImageInput.value = '';
+        productImageInput.value = '';
+      };
+  
+      // قراءة صورة المنتج
+      productImageReader.readAsDataURL(productImageInput.files[0]);
+    };
+  
+    // قراءة صورة المعلق
+    userImageReader.readAsDataURL(userImageInput.files[0]);
+  }
+  
+       </script>
+        <style>
+          #comments-list {
+    margin-bottom: 20px;
+  }
+  
+  .comment {
+    margin-bottom: 15px;
+    text-align: right;
+  }
+  
+  .comment img {
+    max-width: 100%;
+    border-radius: 50%;
+    
+    margin-left: 10px; /* هذا لتضاف مسافة بين الصورة ونص التعليق */
+    max-width: 100%;
+      border-radius: 50%;
+      /* float: right; */
+      margin-left: 10px;
+      width: 67px;
+  }
+  
+  .comment p {
+    margin: 0; /* لإزالة هامش الفقرة الافتراضي */
+    text-align: right;
+  }
+  
+  #comment-form {
+    display: flex;
+      flex-direction: column;
+      text-align: right;
+      direction: rtl;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input,
+  textarea,
+  button {
+    margin-bottom: 15px;
+    padding: 8px;
+    box-sizing: border-box;
+    
+  }
+  button {
+    background-color: rgb(79, 134, 46);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-style: solid;
+      border-top-width: 0px;
+      border-bottom-width: 0px;
+      border-left-width: 0px;
+      border-right-width: 0px;
+      border-color: rgb(63, 107, 37);
+      padding-top: 14px;
+      padding-bottom: 14px;
+      font-size: 16px;
+      color: rgb(255, 255, 255)!important;
+  }
+  .hand {
+    max-width: 100% !important;
+      width: 301px !important;
+      border-radius: 1px !important;
+  }
+  
+        </style>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="padding_bottom" bis_skin_checked="1">
+
+</div>
+</div>
+<div class="node css44 section-clear section" bis_skin_checked="1"><!--pseudo-hidden-->
+  <div class="padding_top" bis_skin_checked="1">
+
+  </div>
+<div class="container" bis_skin_checked="1">
+  <div class="cont" bis_skin_checked="1">
+  <div class="node css39 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden--><h3 class="textable css40">Galaxy Trade LTD<br><br></h3>
+  </div>
+<div class="node css41 widget-text cr-text widget" bis_skin_checked="1"><!--pseudo-hidden-->
+  <p class="textable css3">16 George street, London, UK. skype: Galaxy-trade, email: Galaxy-trade2000@gmail.com<br><br></p>
+</div>
+<div class="node css43 widget-button widget" bis_skin_checked="1"><!--pseudo-hidden-->
+  <div class="button-container center xs-none" bis_skin_checked="1">
+  <div class="button-wrapper" bis_skin_checked="1"><a class="btn btn-legacy css42 font-text" data-action="linknew" href="#forma" >
+  <div class="pad-left" style="width: 0px;" bis_skin_checked="1">
+  </div>
+  <div class="btn-content" bis_skin_checked="1">
+    <span class="text">Privacy Policy | Terms &amp; Conditions</span>
+  </div>
+  <div class="pad-right" style="width: 12px;" bis_skin_checked="1">
+  </div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="padding_bottom" bis_skin_checked="1">
+
+</div>
+</div>
+<div class="node section section-helper" bis_skin_checked="1">
+
+</div>
+
+    </div></body></html>
